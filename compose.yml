@@ -1,0 +1,9 @@
+services:
+
+  # node.js
+  node:
+    build:
+      context: .
+      dockerfile: infrastructure/Dockerfile
+    volumes:
+      - ./docs:/docs
